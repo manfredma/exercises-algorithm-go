@@ -1,0 +1,15 @@
+# 编译产物
+*.exe
+*.test
+*.out
+
+# 依赖缓存（Go modules 使用系统缓存，无需提交）
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
