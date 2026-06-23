@@ -7,6 +7,18 @@
 package p0049
 
 func groupAnagrams(strs []string) [][]string {
-	// TODO: 待实现
-	return nil
+	groups := make(map[[26]int][]string)
+	for _, s := range strs {
+		var key [26]int
+		for _, ch := range s {
+			key[ch-'a']++
+		}
+		groups[key] = append(groups[key], s)
+	}
+
+	var result [][]string
+	for _, v := range groups {
+		result = append(result, v)
+	}
+	return result
 }

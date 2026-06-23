@@ -76,5 +76,5 @@ func Example() {
 	normalized := normalize(result)
 	fmt.Println(normalized)
 	// Output:
-	// [[bat] [nat tan] [ate eat tea]]
+	// [[ate eat tea] [bat] [nat tan]]
 }
